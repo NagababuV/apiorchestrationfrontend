@@ -23,7 +23,7 @@ const UserCard = ({ user, onSelect }) => {
       />
 
       {/* User Info */}
-      <div className="user-info">
+      <div className="user-info">   
         <p className="user-name">
           {user.firstName} {user.lastName}
         </p>

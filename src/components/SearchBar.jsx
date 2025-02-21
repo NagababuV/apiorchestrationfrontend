@@ -13,7 +13,7 @@ const SearchBar = () => {
     const input = e.target.value;
     setQuery(input);
 
-    if (input.length >= 3) {
+    if (input.length >= 3) { // Don't call API if query is less than 3 chars
       try {
         const results = await searchUsers(input);
         setUsers(results);
